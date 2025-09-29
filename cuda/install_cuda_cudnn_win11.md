@@ -79,3 +79,46 @@ Built on Wed_Aug_20_13:58:20_Pacific_Daylight_Time_2025
 Cuda compilation tools, release 13.0, V13.0.88
 Build cuda_13.0.r13.0/compiler.36424714_0
 ```
+
+# 補足 ①：CUDA のバージョンに対応した cuDNN を探す（例：CUDA12 に合う cuDNN を導入する例）
+
+## ■ CUDA に対応した cuDNN を探す
+
+[アーカイブページ](https://developer.download.nvidia.com/compute/cudnn/redist/cudnn/windows-x86_64/)に移動する。  
+下記命名規則のファイル名から判断してバージョンに合う ZIP ファイルをダウンロードする。
+
+- cudnn-windows-x86_64-X.XX.X.XX_cudaYY-archive.zip
+  - X：cuDNN のバージョン
+  - Y：CUDA のバージョン
+  - 例：cudnn-windows-x86_64-9.13.1.26_cuda12-archive.zip
+
+ZIP ダウンロード後は下記フォルダ構造となっている。
+
+```
+cudnn-windows-x86_64-9.13.1.26_cuda12-archive
+├─bin
+├─include
+└─lib
+    └─x64
+```
+
+## CUDA のインストールディレクトリに cuDNN のライブラリ群を移行する
+
+PowerShell を管理者モードで実行し、下記コマンドで CUDA のシステム環境変数を確認する。
+
+```powershell
+rundll32.exe sysdm.cpl,EditEnvironmentVariables
+```
+
+![](./img/cuda_path.png)
+
+CUDA_PATH のディレクトリ構造を確認する。  
+下記構造に合わせて「cudnn-windows-x86_64-9.13.1.26_cuda12-archive」の中身をコピーしていく。
+
+```
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.9
+├─bin
+├─include
+└─lib
+    └─x64
+```
