@@ -133,3 +133,24 @@ $ python main.py
 正常に実行できれば下記フォルダに生成された画像が格納される
 
 - `output\ComfyUI_00001_.png`
+
+# ２．ComfyUI-Manager の導入
+
+ComfyUI-Manager を導入することでカスタムノードの導入ができるようになる
+今後、カスタムノードを使用する場合もあるので導入しておく
+
+## ■ ComfyUI-Manager をクローンする
+
+`custom_nodes`ディレクトリ配下で ComfyUI-Manager をクローンする
+
+```powershell
+cd .\custom_nodes\
+git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+```
+
+その後、ComfyUI-Manager に必要なライブラリをインストールする
+
+```
+cd .\ComfyUI-Manager\
+uv pip install -r requirements.txt
+```
