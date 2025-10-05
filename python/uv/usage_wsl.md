@@ -1,6 +1,6 @@
 # はじめに
 
-本手順書では uv の使用方法を記載している。
+本手順書では WSL 環境における uv の使用方法を記載している。
 
 ## ■ 仮想環境の作成
 
@@ -9,7 +9,7 @@
 ※Python のバージョンを pyenv などで導入した Python のバージョンに依存する  
 （＝ **Python のバージョンを変更する場合は、pyenv などでバージョンを変更した上で uv で仮想環境を作成する**）
 
-```powershell
+```bash
 uv venv .venv
 ```
 
@@ -33,6 +33,6 @@ include-system-site-packages = false
 下記コマンドで仮想環境を有効化する。  
 ※有効化すると「(.venv)」が表示される
 
-```powershell
-.\.venv\Scripts\Activate.ps1
+```bash
+source .venv/bin/activate
 ```
