@@ -10,7 +10,8 @@
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-その後、下記コマンドでパスを通す。
+その後、下記コマンドでパスを通す  
+※`~/.bashrc`にパスを通しておくこと
 
 ```bash
 export PATH="$HOME/.local/bin:$PATH"
