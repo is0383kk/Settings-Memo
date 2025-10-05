@@ -43,8 +43,16 @@ Activate with: .venv\Scripts\activate
 
 下記コマンドで仮想環境に入る
 
+### Windows の場合
+
 ```powershell
 .venv\Scripts\activate
+```
+
+### WSL の場合
+
+```bash
+source .venv/bin/activate
 ```
 
 ## ■ 必要な Python ライブラリをインストールする
