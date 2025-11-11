@@ -15,27 +15,27 @@
         "."
       ],
       "disabled": false
-    }
-  },
-  "filesystem": {
-    "command": "cmd",
-    "args": ["/c", "npx", "@modelcontextprotocol/server-filesystem"],
-    "disabled": false
-  },
-  "memory": {
-    "command": "cmd",
-    "args": ["/c", "npx", "@modelcontextprotocol/server-memory"],
-    "disabled": false
-  },
-  "awslabs.aws-documentation-mcp-server": {
-    "command": "uvx",
-    "args": ["awslabs.aws-documentation-mcp-server@latest"],
-    "env": {
-      "FASTMCP_LOG_LEVEL": "ERROR",
-      "AWS_DOCUMENTATION_PARTITION": "aws",
-      "MCP_USER_AGENT": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
     },
-    "disabled": false,
-    "autoApprove": []
+    "filesystem": {
+      "command": "cmd",
+      "args": ["/c", "npx", "@modelcontextprotocol/server-filesystem"],
+      "disabled": false
+    },
+    "memory": {
+      "command": "cmd",
+      "args": ["/c", "npx", "@modelcontextprotocol/server-memory"],
+      "disabled": false
+    },
+    "awslabs.aws-documentation-mcp-server": {
+      "command": "uvx",
+      "args": ["awslabs.aws-documentation-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_DOCUMENTATION_PARTITION": "aws",
+        "MCP_USER_AGENT": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
   }
 }
