@@ -19,3 +19,26 @@ Install-Module -Name BurntToast -Force
 ```powershell
 Import-Module BurntToast; New-BurntToastNotification -Text 'ClaudeCode', 'The process is complete' -Sound Default
 ```
+
+## ■ Claude Code のバージョンアップ
+
+Claude Code の設定ファイル更新
+
+```powershell
+$ claude install
+
+✔ Claude Code successfully installed!
+
+  Version: 2.0.55
+
+  Location: C:\Users\ユーザ名\.local\bin\claude.exe
+```
+
+Claude Code のバージョンアップ
+
+```powershell
+$ claude update
+Current version: 2.0.55
+Checking for updates...
+Claude Code is up to date (2.0.55)
+```
