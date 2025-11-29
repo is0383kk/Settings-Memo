@@ -19,7 +19,11 @@
       "Write",
       "Bash",
       "Edit",
-      "WebFetch"
+      "WebFetch",
+      "WebSearch",
+      "ExitPlanMode",
+      "Skill",
+      "SlashCommand"
     ],
     "deny": [
       "Bash(sudo:*)",
