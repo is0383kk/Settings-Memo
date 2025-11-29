@@ -13,7 +13,6 @@
     "LANG": "ja_JP.UTF-8"
   },
   "permissions": {
-    "defaultMode": "acceptEdits",
     "allow": [
       "Task",
       "Glob",
@@ -22,7 +21,11 @@
       "Write",
       "Bash",
       "Edit",
-      "WebFetch"
+      "WebFetch",
+      "WebSearch",
+      "ExitPlanMode",
+      "Skill",
+      "SlashCommand"
     ],
     "deny": [
       "Bash(sudo:*)",
@@ -60,7 +63,8 @@
       "Bash(mysql:*)",
       "Bash(mongod:*)",
       "mcp__supabase__execute_sql"
-    ]
+    ],
+    "defaultMode": "acceptEdits"
   },
   "hooks": {
     "Stop": [
@@ -96,6 +100,10 @@
         ]
       }
     ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "npx ccusage@latest statusline"
   },
   "alwaysThinkingEnabled": true
 }
