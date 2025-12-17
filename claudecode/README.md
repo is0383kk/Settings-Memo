@@ -32,6 +32,27 @@ Checking for updates...
 Claude Code is up to date (2.0.55)
 ```
 
+### バージョンアップ時にエラーが出る場合
+
+インストール時やバージョンアップ時に下記のようなエラーがでる場合
+
+```powershell
+$ claude install --force
+✘ Installation failed
+Could not install - another process is currently installing Claude. Please try again in a moment.
+```
+
+```powershell
+$ claude update
+Current version: 2.0.62
+Checking for updates...
+Another process is currently updating Claude. Please try again in a moment.
+```
+
+下記ディレクトリを削除して再実行すること
+
+- `C:\Users\ユーザ名\.local\state\claude\locks`
+
 ## ■ .mcp.json を指定して Claude Code を起動する
 
 下記コマンドで「.mcp.json」を指定して Claude Code を起動する
