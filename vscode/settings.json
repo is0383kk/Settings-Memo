@@ -269,7 +269,7 @@
   /*
       拡張機能：ClaudeCode設定（Bedrock連携）
     */
-  "claudeCode.selectedModel": "jp.anthropic.claude-sonnet-4-20250514-v1:0",
+  "claudeCode.selectedModel": "sonnet",
   "claudeCode.environmentVariables": [
     {
       "name": "CLAUDE_CODE_USE_BEDROCK",
@@ -277,11 +277,13 @@
     },
     {
       "name": "AWS_REGION",
-      "value": "ap-northeast-1"
+      "value": "us-west-2"
     },
     {
       "name": "AWS_PROFILE",
       "value": "default"
     }
-  ]
+  ],
+  "claudeCode.preferredLocation": "panel",
+  "vite.autoStart": false
 }
