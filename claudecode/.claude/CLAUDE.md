@@ -2,6 +2,10 @@
 
 ## 注意事項
 
+### 環境について
+
+Claude Code は Windows11 上の PowerShell で実行されています
+
 ### 使用言語
 
 - 日本語を使う
